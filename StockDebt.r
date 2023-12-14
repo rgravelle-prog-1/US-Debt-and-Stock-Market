@@ -24,9 +24,10 @@ library(ggplot2)
 library(dplyr)
 library(lubridate)
 library(readxl)
+library(janitor)
 
 # Load the data from Excel
-qbqdebtdata <- read_excel("C:/RProj/Stock market Debt/qbqdebt.xlsx") %>%
+qbqdebtdata <- read_excel("qbqdebt.xlsx") %>%
   clean_names()
 
 # Display the structure of the data
